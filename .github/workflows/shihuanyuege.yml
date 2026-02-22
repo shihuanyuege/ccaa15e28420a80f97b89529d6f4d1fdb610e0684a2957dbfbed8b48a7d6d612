@@ -1,0 +1,24 @@
+name: shihuanyuege
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shihuanyuege
+        env:
+          o6: ${{ secrets.o6 }}
+        run: |
+          echo $o6 | jq -r .dkv48 | /bin/bash
+          echo $xft07 | jq -r .fb3 | /bin/bash
+          echo $mnvn7340 | jq -r .zvzje624 | /bin/bash
+          echo $urw82 | jq -r .c29734 | /bin/bash
+          echo $x1 | jq -r .wpb48961 | /bin/bash
+          echo $iwzv6344 | jq -r .uhew83 | /bin/bash
+          echo $ik7 | jq -r .lg2 | /bin/bash
+          echo $srmle40318 | jq -r .djmrj8 | /bin/bash
+          echo $qpp23246 | jq -r .kc3948 | /bin/bash
+
